@@ -2,8 +2,8 @@ package home01;
 
 import java.time.LocalDate;
 
-public class Animal {
-    private String name;
+public abstract class Animal {
+    protected String name;
     private Illness illness;
     private String ownerName;
     private LocalDate birthday;
@@ -20,9 +20,7 @@ public class Animal {
     public void setName(String name){
         this.name = name;
     }
-    public String getName() {
-        return name;
-    }
+    public abstract String getName();
     public Illness getIllness() {
         return illness;
     }
@@ -50,13 +48,13 @@ public class Animal {
     public void breathe(){
         System.out.println("breathe");
     }
-    public void swim(){
-        System.out.println("animal swim");
-    }
-    public void go(){
-        System.out.println("animal go");
-    }
-    public void fly(){
-        System.out.println("animal fly");
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() +
+                " name= '" + name + '\'' +
+                ", illness= " + illness +
+                ", ownerName= '" + ownerName + '\'' +
+                ", birthday= " + birthday + '\n';
     }
 }
