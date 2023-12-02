@@ -1,4 +1,4 @@
-package home01;
+package homework;
 
 public class Chumka extends Illness {
     public Chumka(String illnessName) {

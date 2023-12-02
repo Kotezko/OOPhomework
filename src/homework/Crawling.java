@@ -1,4 +1,4 @@
-package home01;
+package homework;
 
 public interface Crawling {
     void crawl();

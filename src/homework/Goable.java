@@ -1,4 +1,4 @@
-package home01;
+package homework;
 
 public interface Goable {
     public static final String type = "Goable"; //поля для интерфейса, public static final писать не обязательно.
