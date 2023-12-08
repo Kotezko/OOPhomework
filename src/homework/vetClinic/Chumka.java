@@ -1,4 +1,4 @@
-package homework;
+package homework.vetClinic;
 
 public class Chumka extends Illness {
     public Chumka(String illnessName) {

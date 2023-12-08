@@ -1,4 +1,4 @@
-package homework;
+package homework.vetClinic;
 
 public class Illness {
     public String illnessName;

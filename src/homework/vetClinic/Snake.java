@@ -1,13 +1,13 @@
-package homework;
+package homework.vetClinic;
 
 import java.time.LocalDate;
 
-public class Rat extends Animal implements Swimable, Goable, Speakable{
-    public Rat() {
+public class Snake extends Animal implements Crawling, Speakable, Swimable{
+    public Snake() {
         super();
     }
 
-    public Rat(String name, Illness illness, String ownerName, LocalDate birthday) {
+    public Snake(String name, Illness illness, String ownerName, LocalDate birthday) {
         super(name, illness, ownerName, birthday);
     }
 
@@ -17,19 +17,17 @@ public class Rat extends Animal implements Swimable, Goable, Speakable{
     }
 
     @Override
-    public void run() {
-
+    public void crawl() {
     }
 
     @Override
-    public double getRunSpeed() {
-        return 2;
+    public double getCrawlSpeed() {
+        return 3;
     }
 
     @Override
     public void speak() {
-        System.out.println("squeaking");
-
+        System.out.println("hisses");
     }
 
     @Override
@@ -39,6 +37,6 @@ public class Rat extends Animal implements Swimable, Goable, Speakable{
 
     @Override
     public double getSwimSpeed() {
-        return 1;
+        return 3;
     }
 }

@@ -1,4 +1,4 @@
-package homework;
+package homework.vetClinic;
 
 public interface Goable {
     public static final String type = "Goable"; //поля для интерфейса, public static final писать не обязательно.

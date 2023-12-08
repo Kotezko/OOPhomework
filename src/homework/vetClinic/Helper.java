@@ -1,4 +1,4 @@
-package homework;
+package homework.vetClinic;
 
 public interface Helper {
     public default void toHelp(){
